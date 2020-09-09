@@ -4,11 +4,11 @@
 
 
 <body ng-app="myApp" ng-controller="TablUmnojenia">
-    <div ng-app="" ng-init="firstName='John'">
-        <p>Enter your number: <input type="text" ng-model="entered"></p>
+    <div ng-app="" ng-init="number='3'">
+        <p>Введите число для таблицы умножения: <input type="text" ng-model="number"></p>
     </div>
 
-    <h1 ng-repeat="x in records">{{x}}*{{entered}} = {{x*entered}}</h1>
+    <h1 ng-repeat="x in records">{{x}}*{{number}} = {{x*number}}</h1>
 
     <script>
         var app = angular.module("myApp", []);
