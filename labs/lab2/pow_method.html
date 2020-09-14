@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title></title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<p>pow(4, 5) = {{pow}}</p>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+
+app.controller('myCtrl', function($scope, pow) {
+$scope.pow = pow.myFunc();
+});
+
+app.service('pow', function() {
+this.myFunc = function (x, y) {
+return Math.pow(4, 5);
+}
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="a=3;b=7">
+
+Делимое <input type="number" ng-model="a"> <br>
+Делитель <input type="number" ng-model="b">
+
+<div ng-if="b == 0" >
+Division by zero!!! (b == 0)
+</div>
+<div ng-else>
+{{a}} / {{b}} == {{a / b}} <br>
+Частное = {{a / b}}
+</div>
+
+</div>
+
+</body>
+</html>
